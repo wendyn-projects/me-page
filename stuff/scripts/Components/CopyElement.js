@@ -78,7 +78,7 @@ export class CopyElement {
     #refreshLocation() {
         const rect = this.#elem.getBoundingClientRect();
         this.#messageElem.style.top = rect.bottom + 'px';
-        this.#messageElem.style.left = `min(${rect.left}px, calc(100vw - ${this.#messageElem.offsetWidth}px - 1em))`;
+        this.#messageElem.style.left = `min(${rect.left}px, calc(100vw - ${this.#messageElem.offsetWidth + 1}px - 1em))`;
     }
 
     get #messageText() {
