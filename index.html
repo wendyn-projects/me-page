@@ -21,11 +21,21 @@
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     opacity: 50%;
     transition: opacity .25s ease-in;
+    animation: idk .5s ease-in;
 }
 
 @media (max-aspect-ratio: 1/1) {
     #bg-image {
         opacity: 0%;
+    }
+}
+
+@keyframes idk {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 50%;
     }
 }
     </style>
