@@ -1,0 +1,59 @@
+.problem {
+    color: var(--err-color);
+}
+
+.copy {
+    cursor: pointer;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 2px;
+    padding: 0.1875em;
+    border-style: solid;
+    overflow: hidden;
+
+    font-size: 1rem;
+    border-radius: .375em;
+    background-color: var(--h2-color);
+    color: var(--txt-color);
+    border-color: var(--h3-color);
+    opacity: 100%;
+    backdrop-filter: blur(4px);
+
+    animation: show var(--duration) ease-out;
+    transition: width var(--duration) ease-out;
+}
+
+.message.hidden {
+    display: none;
+    opacity: 0;
+    animation: hide var(--duration) ease-in;
+}
+
+
+@keyframes show {
+    from {
+        margin-top: -1.75em;
+        opacity: 0;
+    } 
+    to {
+        margin-top: 0em;
+        opacity: 100%;
+    }
+}
+@keyframes hide {
+    from {
+        margin-top: 0em;
+        opacity: 100%;
+    } 
+    to {
+        display: none;
+        margin-top: 1.75em;
+        opacity: 0;
+    }
+}

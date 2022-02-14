@@ -1,0 +1,27 @@
+/* Coloring */
+
+* {
+    border-color: var(--h3-color);
+    color: var(--txt-color);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+nav {
+    background-color: var(--h1-color);
+}
+
+a {
+    color: var(--lnk-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+    }
+    img.icon {
+        filter: invert(100%) hue-rotate(180deg);
+    }
+}

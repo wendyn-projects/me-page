@@ -1,0 +1,22 @@
+/* Theme Colors */
+
+:root {
+    --bg-color: #E0E0E0;
+    --h1-color: #FFFFFF60;
+    --h2-color: #FFFFFFC0;
+    --h3-color: #FFFFFFE0;
+    --txt-color: #000;
+    --lnk-color: #202020;
+    --err-color: #F00;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #000;
+        --h1-color: #80808020;
+        --h2-color: #80808060;
+        --h3-color: #808080C0;
+        --txt-color: #F0F0F0;
+        --lnk-color: #C8C8C8;
+    }
+}

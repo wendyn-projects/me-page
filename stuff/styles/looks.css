@@ -1,0 +1,18 @@
+* {
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+    border-style: solid;
+}
+
+img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+nav {
+    user-select: none;
+    backdrop-filter: blur(8px);
+}
+
+h1.centered, h2.centered, h3.centered, h4.centered {
+    text-align: center;
+}

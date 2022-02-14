@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./stuff/styles/theme.css" rel="stylesheet" />
+        <link href="./stuff/styles/colors.css" rel="stylesheet" />
+        <link href="./stuff/styles/layout.css" rel="stylesheet" />
+        <link href="./stuff/styles/looks.css" rel="stylesheet" />
+        <link href="./stuff/styles/components.css" rel="stylesheet" />
+        <title>NEM0244</title>
+    </head>
+    <style>
+#bg-image {
+    position: absolute; 
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 80vh;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    opacity: 50%;
+    transition: opacity .25s ease-in;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    #bg-image {
+        opacity: 0%;
+    }
+}
+    </style>
+    <body>
+        <nav>
+            <span class="filler"></span>
+            <span class="copy" data-copy-text="wendyn#9303"><img src="./stuff/images/discord.png" class="icon" alt="Discord Tag Icon" /></span>
+            <a href="https://steamcommunity.com/id/wendyn"><img src="./stuff/images/steam.png" class="icon" alt="Steam Profile Icon" /></a>
+        </nav>
+        <main>
+            <article>
+                <h1>About me</h1>
+                <ul>
+                    <li>Age: 20</li>
+                    <li>Employment: K2 Atmitec (@QA)</li>
+                </ul>
+            </article>
+            <article>
+                <h2 class="copy">The Legend of Darth Plagueis</h1>
+                Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life... He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful... the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not himself.
+            </article>
+            <article class="narrow">
+                <h2>The Legend of Darth Plagueis</h1>
+                Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life... He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful... the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not himself.
+            </article>
+            <article class="narrow">
+                <h2>The Legend of Darth Plagueis</h1>
+                Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life... He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful... the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not himself.
+            </article>
+            <article>
+                <h2 class="centered">Skills</h2>
+                <ul class="hlist centered">
+                    <li>C#</li>
+                    <li>NUnit</li>
+                    <li>Selenium</li>
+                    <li>C</li>
+                    <li>Pascal/Delphi</li>
+                </ul>
+            </article>
+        </main>
+        <img src="./stuff/images/lain.png" id="bg-image" alt="Background Image" />
+        <script src="./stuff/scripts/initialization.js" type="module"></script>
+    </body>
+</html>

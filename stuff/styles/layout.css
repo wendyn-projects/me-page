@@ -1,0 +1,149 @@
+/* Layout */
+
+* {
+    border-width: 0;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    border-bottom-width: 2px;
+    height: 3em;
+}
+
+nav>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 .25em;
+}
+
+nav img {
+    margin: auto 0;
+    height: 2em;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: flex-start;
+    margin: 5em auto 0 auto;
+}
+
+main > * {
+    padding: 0.25em;
+}
+
+article.wide {
+    flex: 1;
+}
+
+@media screen and (max-width: 480px)
+{
+    main {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+@media screen and (min-width: 480px)
+{
+    main {
+        width: calc(480px - 3em);
+    }
+}
+
+@media screen and (min-width: 600px)
+{
+    main {
+        width: calc(600px - 3em);
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    main {
+        width: calc(768px - 3em);
+    }
+}
+
+@media screen and (min-width: 900px)
+{
+    main {
+        width: calc(900px - 3em);
+    }
+    article.narrow {
+        max-width: calc((900px - 3em) / 2 - 2em);
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    main {
+        width: calc(1024px - 3em);
+    }
+    article.narrow {
+        max-width: calc((1024px - 3em) / 2 - 2em);
+    }
+}
+
+@media screen and (min-width: 1200px)
+{
+    main {
+        width: calc(1200px - 5em);
+    }
+    article.narrow {
+        max-width: calc((1200px - 3em) / 2 - 2em);
+    }
+}
+
+@media screen and (min-width: 2048px)
+{
+    main {
+        width: calc(100% - 5em)
+    }
+    article.narrow {
+        max-width: calc((100% - 5em) / 2 - 2em);
+    }
+}
+
+.filler {
+    display: block;
+    flex: 1;
+}
+
+.hlist
+{
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.hlist.centered {
+    align-items: center;
+}
+.hlist>*
+{
+    display: block;
+}
+.hlist>*::before
+{
+    content: '• ';
+}
+.hlist>*:after
+{
+    content: ' ';
+}
+.hlist>*:last-child:after
+{
+    content: ' •';
+}
